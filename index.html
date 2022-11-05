@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Camila Rozendo Silva">
+    <meta name="author" content="Carlos Felipe Penna Russo">
+    <meta name="author" content="Leonardo Rodrigues Gonzaga">
+    <title>Portal de Filmes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- Fonte e Icones Biblioteca -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <nav class="container-menu">
+        <div><img id="brasao" src="img/Brasao PUC Minas.png"></div>
+
+        <ul id="menu">
+            <li><a href="https://www.themoviedb.org/movie/now-playing" target="_blank">Lançamentos </a></li>
+            <li>|</li>
+            <li><a href="https://www.themoviedb.org/movie" target="_blank">Populares </li></a>
+            <li>|</li>
+            <li><a href="https://www.themoviedb.org/movie/now-playing" target="_blank">No cinema </li></a>
+            <li>|</li>
+            <li><a href="https://www.themoviedb.org/movie/upcoming" target="_blank">Próximas estréias </li></a>
+        </ul>
+
+        <div id="pesquisa" class="search"><input type="text" id="searchBox" placeholder="Faça sua busca"> <button id="btnBuscar" value="submit"> Procurar </button></div>
+        <div class="container-fluid">
+            <div id="tela" class="row">
+            </div>
+        </div>
+    </nav>
+    <!--barra de menu e pesquisa-->
+
+
+    <h1 class="titulo-div">Lançamentos</h1>
+    <div id="lancamentos" class="container-lan row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div id="slide-lan" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col1">
+                                    <iframe width="540" height="315" class="d-block w-100 videos"
+                                        src="https://www.youtube.com/embed/IK1sEiHodZg" title="YouTube video player"
+                                        frameborder="0" 0
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-block w-100 details col2">
+                                    <p>
+                                    <h2>A Mulher Rei</h2>
+                                    <article class="sinopse"><span>Sinopse:</span> Nanisca era a comandante do exército
+                                        do Reino de Daomé, um dos locais mais poderosos da África nos séculos XVII e
+                                        XIX. Durante o período, o grupo militar era composto apenas por mulheres, entre
+                                        as guerreiras está a filha de Nanisca, Nawi, juntas elas combateram os
+                                        colonizadores franceses, tribos rivais e todos aqueles que tentaram escravizar
+                                        seu povo e destruir suas terras.</article>
+                                    <div class="info">
+                                        <span>Diretora:</span> Gina Prince-Bythewood |
+                                        <span>Roteiro:</span> Dana Stevens <br>
+                                        <span>Estreia:</span> 2022 |
+                                        <span>Elenco:</span> Viola Davis, Hero Fiennes Tiffin, Lashana Lynch, Thuso
+                                        Mbedu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
+                                    <iframe width="540" height="315" class="d-block w-100 videos"
+                                        src="https://www.youtube.com/embed/lROrY_3PmQA" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-block w-100 details col2">
+                                    <p>
+                                    <h2>Adão Negro</h2>
+                                    <article class="sinopse"><span>Sinopse:</span> Quase 5.000 anos depois de ter sido
+                                        concedido com os poderes onipotentes dos deuses egípcios - e de ter sido preso,
+                                        - Adão Negro se ergue de seu túmulo, pronto para trazer sua justiça ao mundo
+                                        moderno.</article>
+                                    <div class="info">
+                                        <span>Diretor:</span> Jaume Collet-Serra |
+                                        <span>Roteiro:</span> Adam Sztykiel, Rory Haines <br>
+                                        <span>Estreia:</span> 2022 |
+                                        <span>Elenco:</span> Dwayne Johnson, Aldis Hodge, Pierce Brosnan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
+                                    <iframe width="540" height="315" class="d-block w-100 videos"
+                                        src="https://www.youtube.com/embed/F_BZre3NPMM" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-block w-100 details col2">
+                                    <div class="row"></div>
+                                    <p>
+                                    <h2>Sorria</h2>
+                                    <article class="sinopse"><span>Sinopse:</span> Depois que uma de suas pacientes
+                                        morre de uma maneira trágica no consultório, uma psiquiatra começa a
+                                        experimentar ocorrências bizarras.</article>
+                                    <div class="info">
+                                        <span>Diretor:</span> Parker Finn |
+                                        <span>Roteiro:</span> Parker Finn <br>
+                                        <span>Estreia:</span> 2022 |
+                                        <span>Elenco:</span> Sosie Bacon, Jessie T. Usher, Kyle Gallner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--div lançamentos-->
+        <!--lançamentos-->
+
+        <section id="destaques" class="container-des container-fluid">
+            <h1 class="titulo-div">Em Destaque</h1>
+            <div class="row" id="Destaque">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/poster_dahmer.jpg" class="card-img-top" alt="Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Dahmer: Um Canibal Americano</h5>
+                        <p class="Data">00/00/00</p>
+                        <p class="card-text">Avaliação</p>
+                        <a href="https://www.themoviedb.org/tv/113988-dahmer-monster-the-jeffrey-dahmer-story"
+                            target="_blank"><button class="det-button-card">Ver detalhes</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--destaques-->
+
+        <section id="avaliacoes">
+            <div class="container pb-4">
+                <h1 class="titulo-div">Últimas Avaliações</h1>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center d-flex mt-4">
+                        <div class="card" style="width: 100%">
+                            <div class="card-header">
+                                <img src="img/woman.png" alt="Avatar" class="avatar" />
+                                <h5 class="card-title">Gabriela Soares</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>A Mulher Rei</strong></p>
+                                <p class="card-text">
+                                    As lutas são um espetáculo coreográfico. Elenco excelente. Atuações fortes,
+                                    marcantes e
+                                    carismáticas. Temas importantes misturados em meio ao drama, ação e aventura. É
+                                    possível
+                                    torcer, ter raiva, chorar, refletir e aprender no decorrer do filme!
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="ml-4">09/10/2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center d-flex mt-4">
+                        <div class="card" style="width: 100%">
+                            <div class="card-header">
+                                <img src="img/man.png" alt="Avatar" class="avatar" />
+                                <h5 class="card-title">Henrique Guimarães</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Trem Bala</strong></p>
+                                <p class="card-text">
+                                    Um filme com altas doses de ação, um humor intensamente simplório e reviravoltas
+                                    absurdas, com personagens carismáticos, boas cenas de ação e uma história que pode
+                                    deixar o telespectador mais desatento confuso pelo excesso de informações e as
+                                    diferentes narrativas desenvolvidas ao longo da história.
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="ml-4">09/10/2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center d-flex mt-4">
+                        <div class="card" style="width: 100%">
+                            <div class="card-header">
+                                <img src="img/woman.png" alt="Avatar" class="avatar" />
+                                <h5 class="card-title">Luiza Rodrigues</h5>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>A Mulher Rei</strong></p>
+                                <p class="card-text">
+                                    Que épico. A tempos que não assistia um filme tão impactante, necessário, bem
+                                    dirigido,
+                                    vom um elenco de peso. Precisamos de mais visibilidade pra grandes filmes assim.
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="ml-4">09/10/2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--avaliações-->
+
+        <section id="entrevistas">
+            <div class="container pb-4">
+                <h1 class="titulo-div">Entrevistas & Making of</h1>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center d-flex mt-4">
+                        <div style="width: 100%">
+                            <div class="card-header">
+                                <h5 class="card-title">A Mulher Rei</h5>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/y722SFOd-no" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    style="width: 100%" allowfullscreen>
+                                </iframe>
+                                <p class="card-text">
+                                <p><strong>Diretora: </strong>Gina Bythewood</p>
+                                <p><strong>Roteiro: </strong>Dana Stevens</p>
+                                <p><strong>Estreia: </strong>2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center d-flex mt-4">
+                        <div style="width: 100%">
+                            <div class="card-header">
+                                <h5 class="card-title">Não Olhe Para Cima</h5>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/jovLlCrBQfk" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    style="width: 100%" allowfullscreen>
+                                </iframe>
+                                <p class="card-text">
+                                <p><strong>Diretor: </strong>Adam McKay</p>
+                                <p><strong>Roteiro: </strong>Adam McKay</p>
+                                <p><strong>Estreia: </strong>2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center d-flex mt-4">
+                        <div style="width: 100%">
+                            <div class="card-header">
+                                <h5 class="card-title">Avatar 2</h5>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/bGsgUBLhmXE" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    style="width: 100%" allowfullscreen>
+                                </iframe>
+                                <p class="card-text">
+                                <p><strong>Diretor: </strong>James Cameron</p>
+                                <p><strong>Roteiro: </strong>James Cameron</p>
+                                <p><strong>Estreia: </strong>2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--entrevistas-->
+
+
+        <section id="novidades">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-sm-12">
+                        <h1 class="titulo-div">Novidades</h1>
+                        <div class="container">
+                            <div class="row mt-4">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <img src="https://br.web.img3.acsta.net/c_640_360/newsv7/22/10/07/00/01/4790076.jpg" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-8">
+                                    <h5> <a href="https://www.adorocinema.com/noticias/filmes/noticia-165991/" target="_blank"> Antes do Universo Cinematográfico Marvel, os heróis dos Vingadores apareceram nas telas de forma bem diferente</a></h5>
+                                    <p class="text-nov">Os filmes estrelados pelos Vingadores estão entre os maiores sucessos da história cinematográfica e fizeram do MCU uma das franquias mais populares da atualidade. Mas muito antes de filmes que quebravam recordes, alguns super-heróis da Marvel foram parar nas telas de televisão em adaptações antigas – que podem até parecer  irreconhecíveis para o público ou muitas vezes foram esquecidas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row mt-4">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <img src="https://br.web.img2.acsta.net/r_1048_576/newsv7/22/10/07/18/41/4121233.jpg" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-8">
+                                    <h5><a href="https://www.adorocinema.com/noticias/filmes/noticia-166039/" target="_blank">Jennifer Beals revelou a história por trás do famoso casaco que usou para fazer o pôster do filme</a></h5>
+                                    <p class="text-nov">Flashdance é um dos filmes mais icônicos dos anos 1980. Além de uma trilha-sonora composta por hits como  "Flashdance…What a Feeling” de Irene Cara, “Maniac”, de
+                                     Michael Sembello, “Lady Lady”,de Joe Esposito e “He’s a Dream”, de Shandi Sinnamon, o longa apresentou uma história cativante de uma dançarina e serviu
+                                     looks que viraram moda na época. Um de seus looks mais famosos, no entanto, foi o resultado de um acidente na lavanderia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row mt-4">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <img src="https://br.web.img2.acsta.net/r_640_337/newsv7/22/10/07/20/44/4003030.jpg" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-8">
+                                    <h5><a href="https://www.adorocinema.com/noticias/filmes/noticia-166041/" target="_blank">Halloween Ends tem o confronto final entre Michael Myers e Laurie Strode, personagem de Jamie Lee Curtis na franquia</a></h5>
+                                    <p class="text-nov">Um dos filmes mais esperados do ano, Halloween Ends estreia em 13 de outubro nos cinemas brasileiros, sequência de Halloween (2018) e Halloween Kills: O Terror Continua (2021), que  mostra o confronto final entre Laurie Strode e Michael Myers – despedida de Jamie Lee Curtis do papel da protagonista Laurie Strode, que ela interpretou pela primeira vez no clássico Halloween - A Noite do Terror (1978).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--novidades-->
+                    <div id="sobre" class="col-lg-3 col-sm-12 mt-4 text-center-mobile">
+                        <h2 class="tit-h2">Sobre</h2>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="text-sob"> O Portal de filmes possui os lançamentos, destaques, avaliações, entrevistas, making
+                                    of, novidades, informações sobre filmes em cartaz nos cinemas e canais de
+                                    assinaturas.</p>
+                            </div>
+                        </div>
+                        <h2 class="tit-h2">Editorial</h2>
+                        <div class="row">
+                            <div class="text-sob col-sm-12">
+                                <p><strong>Pesquisa:</strong> Leonardo Rodrigues Gonzaga</p>
+                                <p><strong>Redação:</strong> Carlos Felipe Penna Russo</p>
+                                <p><strong>Gerente Geral:</strong> Camila Rozendo Silva</p>
+                            </div>
+                        </div>
+                        <h2 class="tit-h2">Redes Sociais</h2>
+                        <div class="row">
+                            <div class="col d-block-mobile">
+                                <i class="icons fa fa-facebook" style="font-size: 40px"></i>
+                                <span class="mr-4"></span>
+                                <i class="icons fa fa-twitter" style="font-size: 40px"></i>
+                                <span class="mr-4"></span>
+                                <i class="icons fa fa-instagram" style="font-size: 40px"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--sobre-->
+
+        <footer>
+            <div id="rodape">
+                <p>
+                    <span><strong>Copyright 2022 - Disciplina de Padrões Web - Html, Css e Javascript - ICEI PUC
+                            Minas</strong></span>
+                </p>
+            </div>
+        </footer> <!--rodape-->
+
+</body>
+
+</html>
