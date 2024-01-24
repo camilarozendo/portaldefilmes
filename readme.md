@@ -5,8 +5,7 @@
     <h1 align="center">PORTALDEFILMES</h1>
 </p>
 <p align="center">
-    <em>Error generating text for slogan: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429</em>
+    <em>Exercício para a disciplina de Padrões Web - HTML, CSS e Javascript - PUC Minas</em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/camilarozendo/portaldefilmes?style=default&color=0080ff" alt="license">
@@ -21,32 +20,13 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 
 ##  Quick Links
 
-> - [ Overview](#-overview)
-> - [ Features](#-features)
 > - [ Repository Structure](#-repository-structure)
 > - [ Modules](#-modules)
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
->   - [ Running portaldefilmes](#-running-portaldefilmes)
->   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
 > - [ License](#-license)
 > - [ Acknowledgments](#-acknowledgments)
-
----
-
-##  Overview
-
-Error generating text for overview: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
-
----
-
-##  Features
-
-Error generating text for features: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
 
 ---
 
@@ -100,7 +80,7 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 
 Ensure you have the following dependencies installed on your system:
 
-* **CSS**: `version x.y.z`
+* **CSS**
 
 ###  Installation
 
@@ -116,37 +96,8 @@ git clone https://github.com/camilarozendo/portaldefilmes
 cd portaldefilmes
 ```
 
-3. Install the dependencies:
-
-```sh
-> INSERT-INSTALL-COMMANDS
-```
-
-###  Running portaldefilmes
-
-Use the following command to run portaldefilmes:
-
-```sh
-> INSERT-RUN-COMMANDS
-```
-
-###  Tests
-
-To execute tests, run:
-
-```sh
-> INSERT-TEST-COMMANDS
-```
-
 ---
 
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
-
----
 
 ##  Contributing
 
