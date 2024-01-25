@@ -5,7 +5,7 @@
     <h1 align="center">PORTALDEFILMES</h1>
 </p>
 <p align="center">
-    <em>Exercício para a disciplina de Padrões Web - HTML, CSS e Javascript - PUC Minas</em>
+    <em>Exercício para a disciplina de Padrões Web - HTML, CSS e Javascript do curso de Desenvolvimento Web Front-End - PUC Minas</em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/camilarozendo/portaldefilmes?style=default&color=0080ff" alt="license">
@@ -18,8 +18,9 @@
 </p>
 <hr>
 
-##  Quick Links
+## 🔗 Quick Links
 
+> - [ Overview](#-overview)
 > - [ Repository Structure](#-repository-structure)
 > - [ Modules](#-modules)
 > - [ Getting Started](#-getting-started)
@@ -29,7 +30,13 @@
 
 ---
 
-##  Repository Structure
+##  📍 Overview
+
+O objetivo deste exercício é criar uma página básica de um portal de filmes utilizando HTML, CSS, Javascript e a API do The Movie Database (TMDb) para buscar e exibir informações sobre filmes.
+
+---
+
+## 🧩 Repository Structure
 
 ```sh
 └── portaldefilmes/
@@ -73,7 +80,7 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 
 ---
 
-##  Getting Started
+## 🚀 Getting Started
 
 ***Requirements***
 
@@ -81,7 +88,7 @@ Ensure you have the following dependencies installed on your system:
 
 * **CSS**
 
-###  Installation
+### ⚙️ Installation
 
 1. Clone the portaldefilmes repository:
 
@@ -98,7 +105,7 @@ cd portaldefilmes
 ---
 
 
-##  Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
 
@@ -135,9 +142,29 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ---
 
-##  License
+## 📄 License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+MIT License
+
+Copyright (c) [2022] [Camila Rozendo]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ---
 
